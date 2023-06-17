@@ -56,7 +56,7 @@ body {
 }
 
 .PantallaJuego:hover {
-    background-image: url('../images/tetris.png');
+    background-image: url('images/tetris.png');
     background-size: contain;
     z-index: 2;
 }
@@ -117,12 +117,12 @@ body {
 .powerCircle {
     width: 10px;
     height: 10px;
-    background-image: url('../images/powerOff.png');
+    background-image: url('images/powerOff.png');
     background-size: contain;
 }
 
 .powerCircle:hover{
-    background-image:url('../images/powerOn.png');
+    background-image:url('images/powerOn.png');
 }
 
 .power2 {
@@ -316,7 +316,6 @@ body {
     right: 0;
     left: 350px;
 }
-
 .altavoz .altavoz-linea {
     display: grid;
     grid-template-columns: repeat(6, 2px);
