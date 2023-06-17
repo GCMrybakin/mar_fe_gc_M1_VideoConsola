@@ -44,7 +44,6 @@ body {
     align-content: stretch;
     flex-wrap: nowrap;
 }
-
 .PantallaJuego {
     background-color: rgb(78, 78, 78);
     position: relative;
