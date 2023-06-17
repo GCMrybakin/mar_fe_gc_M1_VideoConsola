@@ -317,7 +317,6 @@ body {
     right: 0;
     left: 350px;
 }
-
 .altavoz .altavoz-linea {
     display: grid;
     grid-template-columns: repeat(6, 2px);
