@@ -1,3 +1,302 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1%;
+    height: 100vh;
+    width: 100vw;
+}
+
+.gameboy-container {
+    width: 420px;
+    height: 680px;
+    background-color: #da1313;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    grid-column: 4 / 4;
+    grid-row: 2 / 2;
+    position: relative;
+}
+
+.PantallaMarco {
+    width: 160px;
+    height: 144px;
+    background-color: black;
+    margin: 20px;
+    padding: 90px;
+    padding-bottom: 60px;
+    border-radius: 0 0 50% 50% / 0 0 15px 15px;
+    overflow: hidden;
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+}
+
+.PantallaJuego {
+    background-color: rgb(78, 78, 78);
+    position: relative;
+    width: 120px;
+    padding: 60px;
+    padding-bottom: 120px;
+    top: -70px;
+    z-index: 1;
+    left: -30px;
+}
+
+.PantallaJuego:hover {
+    background-image: url('images/tetris.png');
+}
+
+.GameboyColor {
+    position: relative;
+    top: -40px;
+    z-index: 1;
+    left: -30px;
+}
+
+.GameboyColor p {
+    width: 220px;
+    padding-left: 2px;
+    top: -40px;
+    margin-top: 0px;
+    color:rgb(176, 218, 255);
+    font-size: 23px;
+    font-weight: bold;
+    word-break: break-all;
+    white-space: normal;
+}
+
+.Marco {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    left: -20px;
+}
+
+.power {
+    color:rgb(176, 218, 255);
+    display: flex;
+    font-size: 9px;
+    left: -100px;
+    padding-right: 40px;
+}
+
+.powerDiv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.powerImage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin-right: 35px;
+    padding-bottom: 5px;
+    gap: 3px;
+}
+
+.powerCircle {
+    width: 10px;
+}
+
+.power2 {
+    width: 25px;
+}
+
+.nintendoMarca {
+    display: flex;
+    color: #da1313;
+    text-shadow: 1px 1px 1px rgba(0,0,0,1);
+    padding-bottom: 40px;
+    border: #da1313;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,1);
+    border-radius: 50px;
+    height: 5px;
+    width: 110px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.botMovimiento {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1%;
+    padding-top: 50px;
+    padding-right: 190px;
+}
+
+.Flecha.arriba {
+    transform: rotate(180deg);
+    grid-column: 2 / 2;
+    grid-row: 1 / 1;
+    background-color: black;
+    border-radius: 0% 0% 20% 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.Flecha.derecha {
+    transform: rotate(-90deg);
+    grid-column: 3 / 3;
+    grid-row: 2 / 2;
+    background-color: black;
+    border-radius: 0% 0% 20% 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+
+}
+
+.Flecha.izquierda {
+    transform: rotate(90deg);
+    grid-column: 1 / 1;
+    grid-row: 2 / 2;
+    background-color: black;
+    border-radius: 00% 0% 20% 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+
+.Flecha.abajo {
+    grid-column: 2 / 2;
+    grid-row: 3 / 3;
+    background-color: black;
+    border-radius: 00% 0% 20% 20%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.botEspecial {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton {
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    background-color: black;
+    color: grey;
+    border-radius: 50%;
+}
+
+.boton.A {
+    position: relative;
+    top: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+.boton.B {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.rojo {
+    color: #da1313;
+}
+
+.morado {
+    color: slateblue;
+}
+
+.verde {
+    color: palegreen;
+}
+
+.amarillo {
+    color:rgb(244, 217, 96)
+}
+
+.azul {
+    color: aqua;
+}
+
+
+.boton-row {
+    display: flex;
+    justify-content: center;
+}
+
+.botonMenus {
+    width: 40px;
+    height: 15px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    margin-top: 50px;
+    border-radius: 50%;
+}
+
+.altavoz {
+    width: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: -20px;
+    right: 0;
+    left: 350px;
+}
+
+.altavoz .altavoz-linea {
+    display: grid;
+    grid-template-columns: repeat(6, 2px);
+    grid-template-rows: repeat(8, 2px);
+    gap: 6px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.altavoz .agujero {
+    width: 4px;
+    height: 4px;
+    background-color: #000;
+    border-radius: 50%;
+}
 
 .altavoz .agujero:nth-child(even) {
     background-color: #444444;
